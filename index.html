@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="log.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <a-item-asset src="/CAR/Car.obj" id="obj"></a-item-asset>
+            <a-item-asset src="/CAR/Car.mtl" id="mtl"></a-item-asset>
+        </a-assets>
+        <a-box position="0 0 -5" color="red" base></a-box>
+
+        <a-entity obj-model="obj:#obj; mtl:#mtl" position="13 0.9 -4" scale="0.01 0.01 0.01" rotation="0 150 0" click></a-entity>
+
+    </a-scene>
+</body>
+</html>
